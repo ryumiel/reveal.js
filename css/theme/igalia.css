@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 /**
  * Sky theme for reveal.js.
  *
@@ -23,7 +22,7 @@ body {
   background-color: #f7fbfc; }
 
 .reveal {
-  font-family: 'Open Sans', 'Nanum Gothic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #333; }
@@ -43,13 +42,16 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: 'Quicksand', 'Nanum Gothic', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.08em;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
+
+.reveal h1:not(:first-child), .reveal h2:not(:first-child), .reveal h3:not(:first-child), .reveal h4:not(:first-child), .reveal h5:not(:first-child), .reveal h6:not(:first-child) {
+  margin-top: 20px; }
 
 .reveal h1 {
   font-size: 3.77em; }

@@ -50,6 +50,9 @@ body {
   text-shadow: none;
   word-wrap: break-word; }
 
+.reveal h1:not(:first-child), .reveal h2:not(:first-child), .reveal h3:not(:first-child), .reveal h4:not(:first-child), .reveal h5:not(:first-child), .reveal h6:not(:first-child) {
+  margin-top: 20px; }
+
 .reveal h1 {
   font-size: 3.77em; }
 
