@@ -50,3 +50,16 @@ $selectionBackgroundColor: #134674;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+// Override img to remove border
+.reveal section img {
+	border: none;
+}
+
+.reveal section img:first-child {
+	margin-top: 0px;
+}
+
+.reveal section img:last-child {
+	margin-bottom: 0px;
+}

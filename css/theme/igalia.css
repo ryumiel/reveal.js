@@ -110,6 +110,12 @@ body {
   display: block;
   margin-left: 40px; }
 
+.reveal ul p {
+  margin: 0; }
+
+.reveal li:not(:last-child) {
+  margin-bottom: 20px; }
+
 .reveal dt {
   font-weight: bold; }
 
@@ -278,3 +284,12 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #3b759e; }
+
+.reveal section img {
+  border: none; }
+
+.reveal section img:first-child {
+  margin-top: 0px; }
+
+.reveal section img:last-child {
+  margin-bottom: 0px; }

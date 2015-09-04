@@ -109,6 +109,12 @@ body {
   display: block;
   margin-left: 40px; }
 
+.reveal ul p {
+  margin: 0; }
+
+.reveal li:not(:last-child) {
+  margin-bottom: 20px; }
+
 .reveal dt {
   font-weight: bold; }
 
