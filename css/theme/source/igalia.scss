@@ -15,15 +15,13 @@
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Open Sans', 'Nanum Gothic', sans-serif;
+$mainFont: 'Open Sans', sans-serif;
 $mainFontSize: 36px;
 $mainColor: #333;
 
-$headingFont: 'Quicksand', 'Nanum Gothic', sans-serif;
+$headingFont: 'Quicksand', sans-serif;
 $headingColor: #333;
 $headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
