@@ -49,6 +49,7 @@
 
 .no-title-footer #title-footer
 {
+	height: 0vh;
 	opacity: 0;
 	transition: opacity 800ms ease-in-out;
 }
