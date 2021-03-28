@@ -10,15 +10,18 @@
 // Include theme-specific fonts
 @import url(./fonts/fira-code/fira-code.css);
 @import url(./fonts/victor-mono/victor-mono.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Victor Mono';
+$mainFont: 'Roboto';
 $mainColor: #FDFAEF;
-$headingFont: 'Victor Mono';
+$headingFont: 'Dosis';
 $headingColor: #ED7A4D;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $headingFontWeight: bold;
+$monospacedFont: 'Victor Mono';
 $backgroundColor: #0D0D0D;
 $linkColor: #9E9D9B;
 $linkColorHover: darken($linkColor, 20%);
@@ -26,6 +29,7 @@ $selectionBackgroundColor: $linkColor;
 $selectionColor: #000;
 $strongColor: #EDCA4D;
 $lightBackgroundColor: #FDFAEF;
+$definitionColor: #EDAE58;
 
 // Palette: #1E1803 #9E9D9B #FDFAEF #EDCA4D #ED7A4D
 // Palette: #BF3073 #D9A404 #F27405 #D93030 #0D0D0D
@@ -90,6 +94,10 @@ $lightBackgroundColor: #FDFAEF;
     color: black;
   }
 
+  code {
+    font-family: $monospacedFont, monospace;
+  }
+
   input {
     font-size: inherit;
   }
@@ -97,6 +105,15 @@ $lightBackgroundColor: #FDFAEF;
   label {
     display: block;
     margin-bottom: 1em;
+  }
+
+  dl dt {
+    padding-top: 10px;
+    color: $definitionColor;
+  }
+
+  dl dt:first-child {
+    padding-top: 0;
   }
 
   .l-multiple {
@@ -233,7 +250,7 @@ span[role=img][aria-label]:hover::after {
   .code {
     text-align: left;
     width: 100%;
-    font-family: 'Dank Mono', monospace;
+    font-family: $monospacedFont, monospace;
     color: #efdcbc;
     background-color: #3f3f3f;
     padding: 0.5em;
